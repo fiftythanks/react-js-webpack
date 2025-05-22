@@ -6,7 +6,7 @@ module.exports = {
     [
       'module-resolver',
       {
-        extensions: ['.mjs', '.js'],
+        extensions: ['.jsx', '.mjs', '.js'],
         resolvePath(sourcePath, currentFile) {
           // Only handle relative paths with no extension
           if (sourcePath.startsWith('.') && path.extname(sourcePath) === '') {
@@ -29,5 +29,8 @@ module.exports = {
       },
     ],
   ],
-  presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
+  presets: [
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    ['@babel/preset-react', { runtime: 'automatic' }],
+  ],
 };
