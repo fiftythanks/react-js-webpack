@@ -1,4 +1,6 @@
-# Template Repository
+# Template React/JSX Repository
+
+- [ ] TODO: add template component architecture.
 
 **React**:
 
