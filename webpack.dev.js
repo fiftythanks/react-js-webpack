@@ -8,19 +8,4 @@ module.exports = merge(common, {
     static: './dist',
     watchFiles: ['./src/template.html'],
   },
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            targets: 'defaults',
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-    ],
-  },
 });

@@ -5,10 +5,10 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    app: './src/index.jsx',
   },
   resolve: {
-    extensions: ['.mjs', '.js', '.json'],
+    extensions: ['.jsx', '.mjs', '.js', '.json'],
     mainFiles: ['index'],
   },
   plugins: [
@@ -58,7 +58,15 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.m?js$/,
+        test: /\.m?jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            targets: 'defaults',
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
         resolve: {
           fullySpecified: false,
         },
