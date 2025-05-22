@@ -2,39 +2,39 @@
 
 **Linting and formatting:**
 
-- ESLint v8.57.1.
-  - eslint-config-airbnb-base.
-  - eslint-config-prettier.
-  - eslint-plugin-import.
-  - eslint-webpack-plugin. — To add JS linting as a pre-build step.
-- Prettier v3.5.2 (`"singleQuote": true`).
-- husky and lint-staged for pre-commit hooks.
-- Stylelint for CSS linting.
-  - stylelint-config-sass-guidelines. — To support Sass files and lint according to the [Sass Guidelines](https://sass-guidelin.es).
-  - stylelint-config-concentric-order. — To check declaration order according to Concentric CSS.
-  - PostCSS. — As a dependency for stylelint-config-sass-guidelines.
-  - stylelint-webpack-plugin. — To add CSS linting as a pre-build step.
+- `eslint` v8.57.1.
+  - `eslint-config-airbnb-base`
+  - `eslint-config-prettier`
+  - `eslint-plugin-import`
+  - `eslint-webpack-plugin` — To add JS linting as a pre-build step.
+- `prettier` v3.5.2 (`"singleQuote": true`).
+- `husky` and `lint-staged` — For pre-commit hooks.
+- `stylelint` — For CSS linting.
+  - `stylelint-config-sass-guidelines` — To support Sass files and lint according to the [Sass Guidelines](https://sass-guidelin.es). (This plugin has some conflicting with Prettier rules. I turned off those rules that led to conflicts in my experience and didn't bring enough value to keep up with constantly needing to turn them off for one line/file.)
+  - `stylelint-config-concentric-order` — To check declaration order according to Concentric CSS.
+  - `postcss` — As a dependency for stylelint-config-sass-guidelines.
+  - `stylelint-webpack-plugin` — To add CSS linting as a pre-build step.
 
 Instructions for building from scratch:
 
 - “[Linting](https://www.theodinproject.com/lessons/node-path-javascript-linting)”, The Odin Project.
-- [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base), GitHub.
+- [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base), GitHub.
 - [ESLint v8.57.1](https://eslint.org/docs/v8.x/use/getting-started), ESLint.
 - [Prettier](https://prettier.io/docs/install), Prettier.
-- [lint-staged](https://github.com/lint-staged/lint-staged#configuration), GitHub.
+- [`lint-staged`](https://github.com/lint-staged/lint-staged#configuration), GitHub.
 - “[Getting Started](https://stylelint.io/user-guide/get-started)”, Stylelint.
-- [stylelint-config-sass-guidelines](https://www.npmjs.com/package/stylelint-config-sass-guidelines), npm.
+- [`stylelint-config-sass-guidelines`](https://www.npmjs.com/package/stylelint-config-sass-guidelines), npm.
 
 **webpack:**
 
-- webpack
-- webpack-cli
-- html-webpack-plugin
-- style-loader
-- css-loader
-- html-loader
-- webpack-dev-server
-- webpack-merge
+- `webpack`
+- `webpack-cli`
+- `html-webpack-plugin`
+- `style-loader`
+- `css-loader`
+- `html-loader`
+- `webpack-dev-server`
+- `webpack-merge`
 
 Instructions for building from scratch:
 
@@ -44,21 +44,21 @@ Instructions for building from scratch:
 
 **Babel:**
 
-- babel-loader. — For webpack.
-- @babel/core
-- @babel/preset-env
+- `babel-loader` — For webpack.
+- `@babel/core`
+- `@babel/preset-env`
 
 Instructions for building from scratch:
 
 - “[What is ES6?](https://www.theodinproject.com/lessons/node-path-javascript-what-is-es6)”, The Odin Project.
-- [babel-loader](https://github.com/babel/babel-loader), GitHub.
+- [`babel-loader`](https://github.com/babel/babel-loader), GitHub.
 
 **Jest:**
 
-- Jest.
-- babel-jest.
-- @types/jest. — For VSCode intellisense.
-- jest-environment-jsdom.
+- `jest`
+- `babel-jest`
+- `@types/jest` — For VSCode intellisense.
+- `jest-environment-jsdom`
 
 Instructions for building from scratch:
 
@@ -68,35 +68,35 @@ Instructions for building from scratch:
 
 **Sass:**
 
-- sass-embedded.
-- sass-loader. — For webpack.
+- `sass-embedded`
+- `sass-loader` — For webpack.
 
 Instructions for building from scratch:
 
-- [Sass-embedded](https://sass-lang.com/install/), Sass.
-- [Sass-loader](https://webpack.js.org/loaders/sass-loader/#root), webpack.
+- [`sass-embedded`](https://sass-lang.com/install/), Sass.
+- [`sass-loader`](https://webpack.js.org/loaders/sass-loader/#root), webpack.
 - Architecture: “7-1”. Read more on [Sass Guidelines](https://sass-guidelin.es/#architecture).
 
 **PostCSS:**
 
-- PostCSS.
-- postcss-loader. — For webpack.
-- autoprefixer.
+- `postcss`
+- `postcss-loader` — For webpack.
+- `autoprefixer`
 
 Instructions for building from scratch:
 
 - [Setup](https://github.com/postcss/postcss#usage), GitHub.
-- [autoprefixer](https://github.com/postcss/autoprefixer), GitHub.
+- [`autoprefixer`](https://github.com/postcss/autoprefixer), GitHub.
 
 **JSDoc:**
 
-- JSDoc
-- eslint-plugin-jsdoc
+- `jsdoc`
+- `eslint-plugin-jsdoc`
 
 Instructions for building from scratch:
 
 - “[Leveraging JSDoc for Better Code Documentation in JavaScript](https://www.pullrequest.com/blog/leveraging-jsdoc-for-better-code-documentation-in-javascript/)”, HackerOne Code.
-- [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc), GitHub.
+- [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc), GitHub.
 
 ---
 
