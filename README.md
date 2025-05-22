@@ -5,6 +5,8 @@
 - `react` — The core React library for building user interfaces.
 - `react-dom` — Provides DOM-specific methods for rendering React components in the browser.
 - `@babel/preset-react` — Enables Babel to understand JSX syntax.
+- `@types/react` – TypeScript type definitions for React. (For VSCode IntelliSense.)
+- `@types/react-dom` – TypeScript type definitions for ReactDOM. (For VSCode IntelliSense.)
 
 **Linting and formatting:**
 
@@ -65,13 +67,13 @@ Instructions for building from scratch:
 
 - `jest`
 - `babel-jest` — Transforms code using Babel before tests are executed.
-- `@types/jest` — For VSCode intellisense.
+- `@types/jest` — For VSCode IntelliSense.
 - `jest-environment-jsdom`
 
 Instructions for building from scratch:
 
 - “[Getting Started](https://jestjs.io/docs/getting-started#using-babel)” (sections “[Generate a basic configuration file](https://jestjs.io/docs/getting-started#generate-a-basic-configuration-file)” and “[Using Babel](https://jestjs.io/docs/getting-started#using-babel)”), Jest.
-- “[Intellisense for Jest not working in VS code](https://stackoverflow.com/questions/57874114/intellisense-for-jest-not-working-in-vs-code)”, StackOverflow.
+- “[IntelliSense for Jest not working in VS code](https://stackoverflow.com/questions/57874114/IntelliSense-for-jest-not-working-in-vs-code)”, StackOverflow.
 - “[DOM Manipulation](https://jestjs.io/docs/tutorial-jquery)”, Jest.
 
 **Sass:**
