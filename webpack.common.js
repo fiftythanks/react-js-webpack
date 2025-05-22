@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Production',
-      template: './src/template.html',
+      template: './src/index.html',
     }),
     new ESLintPlugin({ configType: 'eslintrc' }),
     new StylelintPlugin({}),
