@@ -11,9 +11,12 @@
 **Linting and formatting:**
 
 - `eslint` v8.57.1.
-  - `eslint-config-airbnb-base` — Provides Airbnb's base JS .eslintrc (without React plugins) as an extensible shared config.
+  - `eslint-config-airbnb` — Linting according to Airbnb's [JavaScript Style Guide](https://github.com/airbnb/javascript?tab=readme-ov-file) and [React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react).
+  - `eslint-plugin-import` — This plugin intends to support linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names. — Required for `eslint-config-airbnb`.
+  - `eslint-plugin-react` — React-specific linting rules for ESLint. — Required for `eslint-config-airbnb`.
+  - `eslint-plugin-jsx-a11y` — It does a static evaluation of the JSX to spot accessibility issues in React apps. — Required for `eslint-config-airbnb`.
+  - `eslint-plugin-react-hooks` — It enforces the [Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks). — Required for `eslint-config-airbnb`.
   - `eslint-config-prettier` — Turns off all rules that are unnecessary or might conflict with Prettier.
-  - `eslint-plugin-import` — This plugin intends to support linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names.
   - `eslint-webpack-plugin` — Adds JS linting as a pre-build step.
 - `prettier` v3.5.2 (`"singleQuote": true`).
 - `husky` — Git hooks.
@@ -25,9 +28,8 @@
 
 Instructions for building from scratch:
 
-- “[Linting](https://www.theodinproject.com/lessons/node-path-javascript-linting)”, The Odin Project.
-- [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base), Airbnb, GitHub.
 - “[Getting Started](https://eslint.org/docs/v8.x/use/getting-started)”, ESLint.
+- [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb), npm.
 - “[Install](https://prettier.io/docs/install)”, Prettier.
 - [`lint-staged`](https://github.com/lint-staged/lint-staged#configuration), lint-staged, GitHub.
 - “[Getting Started](https://stylelint.io/user-guide/get-started)”, Stylelint.
