@@ -13,7 +13,7 @@
 - `eslint` v8.57.1.
   - `eslint-config-airbnb` — Linting according to Airbnb's [JavaScript Style Guide](https://github.com/airbnb/javascript?tab=readme-ov-file) and [React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react).
   - `eslint-plugin-import` — This plugin intends to support linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names. — Required for `eslint-config-airbnb`.
-  - `eslint-import-resolver-webpack` — `eslint-plugin-import` plugin. Enables ESLint to understand module resolution configured for webpack.
+  - `eslint-import-resolver-webpack` — An `eslint-plugin-import` plugin. Enables ESLint to understand module resolution configured for webpack.
   - `eslint-plugin-react` — React-specific linting rules for ESLint. — Required for `eslint-config-airbnb`.
   - `eslint-plugin-jsx-a11y` — It does a static evaluation of the JSX to spot accessibility issues in React apps. — Required for `eslint-config-airbnb`.
   - `eslint-plugin-react-hooks` — It enforces the [Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks). — Required for `eslint-config-airbnb`.
