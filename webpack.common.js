@@ -9,7 +9,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.jsx', '.mjs', '.js', '.json'],
-    mainFiles: ['index'],
     alias: {
       '@*': path.resolve(__dirname, 'src/*'),
     },
