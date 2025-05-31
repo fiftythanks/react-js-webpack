@@ -102,16 +102,6 @@ Instructions for building from scratch:
 - [Setup](https://github.com/postcss/postcss#usage) (PostCSS, GitHub).
 - [`autoprefixer`](https://github.com/postcss/autoprefixer), PostCSS, GitHub.
 
-**JSDoc:**
-
-- `jsdoc`
-- `eslint-plugin-jsdoc` — JSDoc linting rules for ESLint.
-
-Instructions for building from scratch:
-
-- “[Leveraging JSDoc for Better Code Documentation in JavaScript](https://www.pullrequest.com/blog/leveraging-jsdoc-for-better-code-documentation-in-javascript/)”, HackerOne Code.
-- [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc), gajus, GitHub.
-
 ---
 
 When using the template, you should remove all unnecessary webpack plugins for asset management.
