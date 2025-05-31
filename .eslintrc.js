@@ -9,9 +9,9 @@
  */
 
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier', 'plugin:import/recommended'],
+  plugins: ['import'],
   ignorePatterns: ['webpack.*.js', 'dist', '**/*.test.mjs'] /* [1] */,
-
   env: {
     browser: true,
     es2024: true,
@@ -20,9 +20,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-
   rules: {
     // This rule should be deprecated since React deprecated PropTypes in April 2017.
     'react/prop-types': [0],
+  },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.common.js',
+      },
+    },
   },
 };
